@@ -35,6 +35,8 @@ while true:
             cnt, 0.07 * cv2.arcLength(cnt, True), True)
         if len(approx) == 3:
             tri_coords.append([cnt])
+        elif len(approx) == 4:
+            sq_coords.append([cnt])
             
     # color contors
     for cnt in tri_coords:
