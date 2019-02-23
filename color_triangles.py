@@ -37,7 +37,7 @@ while true:
             tri_coords.append([cnt])
         elif len(approx) == 4:
             sq_coords.append([cnt])
-        elif len(approx) > 8 && cv2.contourArea(cnt): # lots of verticies but not miniscule
+        elif len(approx) > 8 and cv2.contourArea(cnt): # lots of verticies but not miniscule
             cc_coords.append([cnt])
             
     # color contors
